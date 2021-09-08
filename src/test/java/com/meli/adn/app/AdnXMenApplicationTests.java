@@ -1,0 +1,13 @@
+package com.meli.adn.app;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class AdnXMenApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
