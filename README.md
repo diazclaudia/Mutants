@@ -8,6 +8,16 @@ iguales , de forma oblicua, horizontal o vertical.
 
 # Api
 
+## Lenguajes y Frameworks
+
+* Java 11
+* Spring Boot
+* JPA
+* DB embebed H2
+* JUnit
+* mockito
+* Jmeter
+
 ## Diagrama de componentes
 
 ![Arquitectura](https://github.com/diazclaudia/Mutants/blob/master/img/componentes.png?raw=true)
