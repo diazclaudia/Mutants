@@ -98,4 +98,13 @@ Response: `{
 
 ![Docker](https://github.com/diazclaudia/Mutants/blob/master/img/test.png?raw=true)
 
+### Pruebas de carga Jmeter
+
+Se hacen pruebas de carga para medir las fluctuaciones de tráfico con Jmeter y los resultados fueron para más de un millón de peticiones 12:33 minutos para el servicio mutant.
+
+![Jmeter](https://github.com/diazclaudia/Mutants/blob/master/img/jmeter1.png?raw=true)
+![Jmeter](https://github.com/diazclaudia/Mutants/blob/master/img/jmeter2.png?raw=true)
+![Jmeter](https://github.com/diazclaudia/Mutants/blob/master/img/jmeter3.png?raw=true)
+![Jmeter](https://github.com/diazclaudia/Mutants/blob/master/img/jmeter4.png?raw=true)
+
 
