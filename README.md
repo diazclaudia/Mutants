@@ -6,13 +6,13 @@ de (NxN) con la secuencia del ADN. Las letras de los Strings solo pueden ser: (A
 iguales , de forma oblicua, horizontal o vertical.
 
 
-## Api
+# Api
 
-### Diagrama de componentes
+## Diagrama de componentes
 
 ![Arquitectura](https://github.com/diazclaudia/Mutants/blob/master/img/componentes.png?raw=true)
 
-### Explicación de la lógica del algoritmo implementado
+## Explicación de la lógica del algoritmo implementado
 
 Para la implementación del algoritmo de validación del genoma mutante se siguen los siguientes pasos:
 
@@ -40,9 +40,9 @@ Para la implementación del algoritmo de validación del genoma mutante se sigue
 ![triangulo](https://github.com/diazclaudia/Mutants/blob/master/img/upper_inverse.png?raw=true)
 
 
-### Ejecución del aplicativo
+# Ejecución del aplicativo
 
-#### Contenedor Docker
+## Contenedor Docker
 
 Pasos a seguir para ejecutar el contenedor Docker 
 
@@ -59,16 +59,16 @@ Pasos a seguir para ejecutar el contenedor Docker
 9. Tener en cuenta que el puerto es el mismo que un puerto local, así que las ejecuciones de aplicativos locales deben estar apagadas.
 
 
-#### Despliegue en host
+## Despliegue en host
 
 Se intentó desplegar en Heroku pero el proyecto al tener una base de datos embebida H2 no la soporta Heroku, por esta razón se usó Docker, así que dejo como deuda técnica implementar una base de datos externa ya sea web o local que sea compatible con un host en la nube.
 
 ![Docker](https://github.com/diazclaudia/Mutants/blob/master/img/heroku.png?raw=true)
 
 
-#### End Points Docker y locales
+## End Points Docker y locales
 
-##### /mutant
+### /mutant
 
 `curl --location --request POST 'http://localhost:8080/mutant' --header 'Content-Type: application/json' --header 'Cookie: JSESSIONID=46EECF48B646324BAA3F09D581E8FF6D' --data-raw '{
 	"dna": [
@@ -83,7 +83,7 @@ Se intentó desplegar en Heroku pero el proyecto al tener una base de datos embe
 
 Response: En caso de mutante status 200, en caso de humano status 403
 
-##### /stats
+### /stats
 
 `curl --location --request GET 'http://localhost:8080/stats' --header 'Cookie: JSESSIONID=46EECF48B646324BAA3F09D581E8FF6D'`
 
@@ -94,7 +94,7 @@ Response: `{
 }`
 
 
-#### Pruebas unitarias y cobertura
+### Pruebas unitarias y cobertura
 
 ![Docker](https://github.com/diazclaudia/Mutants/blob/master/img/test.png?raw=true)
 
